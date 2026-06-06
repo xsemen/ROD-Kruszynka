@@ -9,24 +9,14 @@ Prosta statyczna strona przygotowana pod GitHub Pages.
 - `dokumenty.html` — dokumenty do pobrania
 - `kontakt.html` — kontakt
 - `style.css` — wygląd strony
-- `img/kruszynka-header.jpg` — zdjęcie w górnej belce strony
+- `img/kruszynka-header.jpg` — zdjęcie w górnej belce strony, bez daty i godziny z kamery
 - `.nojekyll` — wyłącza przetwarzanie Jekyll na GitHub Pages
 
-## Jak wrzucić na GitHub Pages
+## Jak zaktualizować stronę na GitHubie
 
 1. Rozpakuj paczkę ZIP.
-2. W repozytorium GitHub wybierz `uploading an existing file`.
+2. W repozytorium GitHub wybierz `Add file` → `Upload files`.
 3. Wrzuć całą zawartość rozpakowanego folderu, nie sam plik ZIP.
-4. Zatwierdź przyciskiem `Commit changes`.
-5. Wejdź w `Settings` → `Pages`.
-6. Ustaw:
-   - Source: `Deploy from a branch`
-   - Branch: `main`
-   - Folder: `/root`
-7. Zapisz.
-
-Adres strony pojawi się w `Settings` → `Pages`.
-
-## Uwaga
-
-Nie publikuj na stronie danych osobowych działkowców, prywatnych numerów telefonów, list dłużników ani zdjęć osób bez zgody.
+4. Gdy GitHub zapyta o nadpisanie plików, zatwierdź zmiany.
+5. Kliknij `Commit changes`.
+6. Po chwili GitHub Pages sam opublikuje nową wersję strony.
