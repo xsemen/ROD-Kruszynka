@@ -20,3 +20,12 @@ Prosta statyczna strona przygotowana pod GitHub Pages.
 4. Gdy GitHub zapyta o nadpisanie plików, zatwierdź zmiany.
 5. Kliknij `Commit changes`.
 6. Po chwili GitHub Pages sam opublikuje nową wersję strony.
+
+
+## Wersja v3 — pogoda
+
+Dodano:
+- pozycję **Pogoda** w menu po pozycji **Kontakt**,
+- aktualną temperaturę i ikonę pogody w menu,
+- stronę `pogoda.html` z aktualną pogodą i prognozą na najbliższe dni,
+- skrypt `weather.js` pobierający dane z Open-Meteo dla Kruszyna Krajeńskiego.

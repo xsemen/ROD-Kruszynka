@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pogoda — ROD Kruszynka</title>
+  <meta name="description" content="Aktualna pogoda dla ROD Kruszynka, Kruszyn Krajeński koło Bydgoszczy.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="badge">Pogoda</div>
+    <h1>ROD Kruszynka</h1>
+    <p>Aktualna pogoda dla Kruszyna Krajeńskiego i okolic Bydgoszczy.</p>
+  </header>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html">Start</a>
+      <a href="aktualnosci.html">Aktualności</a>
+      <a href="dokumenty.html">Dokumenty</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a class="weather-nav active" href="pogoda.html" title="Pogoda dla Kruszyna Krajeńskiego">
+        <span class="weather-word">Pogoda</span>
+        <span class="weather-temp" data-weather-temp>--°C</span>
+        <span class="weather-icon" data-weather-icon>⛅</span>
+      </a>
+    </div>
+  </nav>
+
+  <main data-weather-page>
+    <section class="card">
+      <h2>Pogoda dla ROD „Kruszynka”</h2>
+      <p class="small">Lokalizacja: Kruszyn Krajeński, okolice Bydgoszczy.</p>
+
+      <div class="weather-hero">
+        <div class="weather-big-icon" data-current-icon>⛅</div>
+        <div>
+          <div class="weather-big-temp" data-current-temp>--°C</div>
+          <div class="weather-status" data-current-desc>Ładowanie pogody...</div>
+          <div class="small">Ostatnia aktualizacja: <span data-current-time>--</span></div>
+        </div>
+      </div>
+
+      <div class="weather-details-grid">
+        <div class="weather-detail">
+          <span>Opady</span>
+          <strong data-current-rain>-- mm</strong>
+        </div>
+        <div class="weather-detail">
+          <span>Wiatr</span>
+          <strong data-current-wind>-- km/h</strong>
+        </div>
+        <div class="weather-detail">
+          <span>Wilgotność</span>
+          <strong data-current-humidity>--%</strong>
+        </div>
+        <div class="weather-detail">
+          <span>Zachmurzenie</span>
+          <strong data-current-clouds>--%</strong>
+        </div>
+      </div>
+
+      <div class="weather-forecast">
+        <h3>Najbliższe dni</h3>
+        <div class="weather-forecast-list" data-forecast-list>
+          <div class="small">Ładowanie prognozy...</div>
+        </div>
+      </div>
+
+      <p class="weather-source">
+        Dane pogodowe pobierane automatycznie z Open-Meteo. Prognoza ma charakter informacyjny.
+      </p>
+
+      <a class="button" href="index.html">Powrót na stronę główną</a>
+    </section>
+  </main>
+
+  <footer>
+    © ROD Kruszynka — strona testowa.
+  </footer>
+
+  <script src="weather.js"></script>
+</body>
+</html>
